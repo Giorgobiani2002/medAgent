@@ -110,10 +110,10 @@ export default function WelcomeView({ onStartCall, startButtonText }: WelcomeVie
             </h1>
 
             <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-10 leading-relaxed">
-              Get instant health guidance through natural voice conversations. Schedule appointments, understand symptoms, and take control of your health—24/7.
+              {`Get instant health guidance through natural voice conversations. Schedule appointments, understand symptoms, and take control of your health—24/7.`}
             </p>
 
-            {/* CTA Buttons - THESE TRIGGER THE CHAT */}
+            {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
               <button
                 onClick={onStartCall}
@@ -123,7 +123,6 @@ export default function WelcomeView({ onStartCall, startButtonText }: WelcomeVie
                 {startButtonText || "Start Talking Now"}
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
-              
             </div>
 
             {/* Trust Indicators */}
@@ -152,23 +151,23 @@ export default function WelcomeView({ onStartCall, startButtonText }: WelcomeVie
                   <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                   <div className="w-3 h-3 rounded-full bg-green-500"></div>
                 </div>
-                
+
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <div className="bg-blue-600 p-2 rounded-lg">
                       <Mic className="w-5 h-5" />
                     </div>
                     <div className="flex-1 bg-gray-700/50 rounded-2xl rounded-tl-none p-4">
-                      <p className="text-sm">"I've been having a headache for two days..."</p>
+                      <p className="text-sm">{`"I've been having a headache for two days..."`}</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start gap-3 flex-row-reverse">
                     <div className="bg-purple-600 p-2 rounded-lg">
                       <Sparkles className="w-5 h-5" />
                     </div>
                     <div className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl rounded-tr-none p-4">
-                      <p className="text-sm">I understand. Let me ask you a few questions to better assess your symptoms...</p>
+                      <p className="text-sm">{`I understand. Let me ask you a few questions to better assess your symptoms...`}</p>
                     </div>
                   </div>
 
@@ -187,12 +186,8 @@ export default function WelcomeView({ onStartCall, startButtonText }: WelcomeVie
       <section id="features" className="py-24 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Everything You Need for Better Healthcare
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Powerful AI technology meets compassionate care
-            </p>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Everything You Need for Better Healthcare</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">Powerful AI technology meets compassionate care</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -229,12 +224,8 @@ export default function WelcomeView({ onStartCall, startButtonText }: WelcomeVie
                 <div className={`bg-gradient-to-br ${feature.gradient} w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform`}>
                   {feature.icon}
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {feature.description}
-                </p>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -245,16 +236,11 @@ export default function WelcomeView({ onStartCall, startButtonText }: WelcomeVie
       <section id="how-it-works" className="py-24 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              How It Works
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Three simple steps to better health
-            </p>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">How It Works</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">Three simple steps to better health</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-12 relative">
-            {/* Connecting Line */}
             <div className="hidden md:block absolute top-20 left-0 right-0 h-1 bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200"></div>
 
             {[
@@ -281,19 +267,15 @@ export default function WelcomeView({ onStartCall, startButtonText }: WelcomeVie
                 <div className={`w-20 h-20 rounded-full bg-gradient-to-br ${item.gradient} flex items-center justify-center text-white text-2xl font-bold mb-6 mx-auto shadow-lg relative z-10`}>
                   {item.step}
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
-                  {item.title}
-                </h3>
-                <p className="text-gray-600 text-center leading-relaxed">
-                  {item.description}
-                </p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">{item.title}</h3>
+                <p className="text-gray-600 text-center leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Security Banner */}
+      {/* Security Section */}
       <section id="security" className="py-24 px-6 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -302,11 +284,9 @@ export default function WelcomeView({ onStartCall, startButtonText }: WelcomeVie
                 <Shield className="w-4 h-4" />
                 <span className="text-sm font-medium">Enterprise-Grade Security</span>
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Your Privacy is Our Top Priority
-              </h2>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">Your Privacy is Our Top Priority</h2>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                We use bank-level encryption and comply with all healthcare regulations to keep your information safe and secure.
+                {`We use bank-level encryption and comply with all healthcare regulations to keep your information safe and secure.`}
               </p>
               <div className="space-y-4">
                 {[
@@ -340,7 +320,7 @@ export default function WelcomeView({ onStartCall, startButtonText }: WelcomeVie
         </div>
       </section>
 
-      {/* Final CTA Banner - ALSO TRIGGERS CHAT */}
+      {/* Final CTA Section */}
       <section className="py-24 px-6 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-500 relative overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-10 left-10 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
@@ -348,12 +328,8 @@ export default function WelcomeView({ onStartCall, startButtonText }: WelcomeVie
         </div>
 
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Ready to Transform Your Healthcare Experience?
-          </h2>
-          <p className="text-xl text-white/90 mb-10 leading-relaxed">
-            Join thousands who trust MediVoice AI for their health guidance
-          </p>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Transform Your Healthcare Experience?</h2>
+          <p className="text-xl text-white/90 mb-10 leading-relaxed">Join thousands who trust MediVoice AI for their health guidance</p>
           <button
             onClick={onStartCall}
             className="group bg-white text-blue-600 px-10 py-5 rounded-full font-bold text-xl shadow-2xl hover:shadow-3xl hover:scale-105 transition-all duration-300 inline-flex items-center gap-3"
@@ -362,9 +338,7 @@ export default function WelcomeView({ onStartCall, startButtonText }: WelcomeVie
             Start Your Free Consultation
             <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
           </button>
-          <p className="text-white/70 text-sm mt-6">
-            No credit card required • Free forever • HIPAA compliant
-          </p>
+          <p className="text-white/70 text-sm mt-6">No credit card required • Free forever • HIPAA compliant</p>
         </div>
       </section>
 
@@ -378,11 +352,9 @@ export default function WelcomeView({ onStartCall, startButtonText }: WelcomeVie
             <span className="text-2xl font-bold text-white">MediVoice AI</span>
           </div>
           <p className="mb-4">
-            This AI assistant provides guidance only and does not replace professional medical advice, diagnosis, or treatment.
+            {`This AI assistant provides guidance only and does not replace professional medical advice, diagnosis, or treatment.`}
           </p>
-          <p className="text-sm">
-            © 2025 MediVoice AI. All rights reserved. | Privacy Policy | Terms of Service
-          </p>
+          <p className="text-sm">© 2025 MediVoice AI. All rights reserved. | Privacy Policy | Terms of Service</p>
         </div>
       </footer>
     </div>
