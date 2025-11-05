@@ -41,31 +41,31 @@ export default function WelcomeView({ onStartCall, startButtonText }: WelcomeVie
             <div className="hidden items-center gap-8 md:flex">
               <a
                 href="#features"
-                className="font-medium cursor-pointer text-gray-600 transition-colors hover:text-blue-600"
+                className="cursor-pointer font-medium text-gray-600 transition-colors hover:text-blue-600"
               >
                 Features
               </a>
               <a
                 href="#how-it-works"
-                className="font-medium cursor-pointer text-gray-600 transition-colors hover:text-blue-600"
+                className="cursor-pointer font-medium text-gray-600 transition-colors hover:text-blue-600"
               >
                 How It Works
               </a>
               <a
                 href="#security"
-                className="font-medium cursor-pointer text-gray-600 transition-colors hover:text-blue-600"
+                className="cursor-pointer font-medium text-gray-600 transition-colors hover:text-blue-600"
               >
                 Security
               </a>
               <a
                 href="#pricing"
-                className="font-medium cursor-pointer text-gray-600 transition-colors hover:text-blue-600"
+                className="cursor-pointer font-medium text-gray-600 transition-colors hover:text-blue-600"
               >
                 Pricing
               </a>
               <button
                 onClick={onStartCall}
-                className="rounded-full cursor-pointer bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-2.5 font-semibold text-white transition-all duration-200 hover:scale-105 hover:shadow-lg"
+                className="cursor-pointer rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-2.5 font-semibold text-white transition-all duration-200 hover:scale-105 hover:shadow-lg"
               >
                 Try for Free
               </button>
@@ -85,25 +85,25 @@ export default function WelcomeView({ onStartCall, startButtonText }: WelcomeVie
             <div className="space-y-3 pt-4 pb-2 md:hidden">
               <a
                 href="#features"
-                className="block py-2 cursor-pointer font-medium text-gray-600 transition-colors hover:text-blue-600"
+                className="block cursor-pointer py-2 font-medium text-gray-600 transition-colors hover:text-blue-600"
               >
                 Features
               </a>
               <a
                 href="#how-it-works"
-                className="block py-2 cursor-pointer font-medium text-gray-600 transition-colors hover:text-blue-600"
+                className="block cursor-pointer py-2 font-medium text-gray-600 transition-colors hover:text-blue-600"
               >
                 How It Works
               </a>
               <a
                 href="#security"
-                className="block py-2 cursor-pointer font-medium text-gray-600 transition-colors hover:text-blue-600"
+                className="block cursor-pointer py-2 font-medium text-gray-600 transition-colors hover:text-blue-600"
               >
                 Security
               </a>
               <a
                 href="#pricing"
-                className="block py-2 cursor-pointer font-medium text-gray-600 transition-colors hover:text-blue-600"
+                className="block cursor-pointer py-2 font-medium text-gray-600 transition-colors hover:text-blue-600"
               >
                 Pricing
               </a>
@@ -136,7 +136,6 @@ export default function WelcomeView({ onStartCall, startButtonText }: WelcomeVie
         <div className="relative z-10 mx-auto max-w-7xl">
           <div className="text-center">
             {/* Badge */}
-          
 
             {/* Main Headline */}
             <h1 className="mb-6 text-5xl leading-tight font-bold text-white md:text-6xl lg:text-7xl">
@@ -403,7 +402,7 @@ export default function WelcomeView({ onStartCall, startButtonText }: WelcomeVie
           </p>
           <button
             onClick={onStartCall}
-            className="group cursor-pointer hover:shadow-3xl inline-flex items-center gap-3 rounded-full bg-white px-10 py-5 text-xl font-bold text-blue-600 shadow-2xl transition-all duration-300 hover:scale-105"
+            className="group hover:shadow-3xl inline-flex cursor-pointer items-center gap-3 rounded-full bg-white px-10 py-5 text-xl font-bold text-blue-600 shadow-2xl transition-all duration-300 hover:scale-105"
           >
             <Mic className="h-7 w-7" />
             Start Your Free Consultation
