@@ -33,7 +33,7 @@ export default function WelcomeView({ onStartCall, startButtonText }: WelcomeVie
                 <Heart className="h-6 w-6 text-white" />
               </div>
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-2xl font-bold text-transparent">
-                MediVoice AI
+                MedVoice AI
               </span>
             </div>
 
@@ -41,31 +41,31 @@ export default function WelcomeView({ onStartCall, startButtonText }: WelcomeVie
             <div className="hidden items-center gap-8 md:flex">
               <a
                 href="#features"
-                className="font-medium text-gray-600 transition-colors hover:text-blue-600"
+                className="font-medium cursor-pointer text-gray-600 transition-colors hover:text-blue-600"
               >
                 Features
               </a>
               <a
                 href="#how-it-works"
-                className="font-medium text-gray-600 transition-colors hover:text-blue-600"
+                className="font-medium cursor-pointer text-gray-600 transition-colors hover:text-blue-600"
               >
                 How It Works
               </a>
               <a
                 href="#security"
-                className="font-medium text-gray-600 transition-colors hover:text-blue-600"
+                className="font-medium cursor-pointer text-gray-600 transition-colors hover:text-blue-600"
               >
                 Security
               </a>
               <a
                 href="#pricing"
-                className="font-medium text-gray-600 transition-colors hover:text-blue-600"
+                className="font-medium cursor-pointer text-gray-600 transition-colors hover:text-blue-600"
               >
                 Pricing
               </a>
               <button
                 onClick={onStartCall}
-                className="rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-2.5 font-semibold text-white transition-all duration-200 hover:scale-105 hover:shadow-lg"
+                className="rounded-full cursor-pointer bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-2.5 font-semibold text-white transition-all duration-200 hover:scale-105 hover:shadow-lg"
               >
                 Try for Free
               </button>
@@ -85,31 +85,31 @@ export default function WelcomeView({ onStartCall, startButtonText }: WelcomeVie
             <div className="space-y-3 pt-4 pb-2 md:hidden">
               <a
                 href="#features"
-                className="block py-2 font-medium text-gray-600 transition-colors hover:text-blue-600"
+                className="block py-2 cursor-pointer font-medium text-gray-600 transition-colors hover:text-blue-600"
               >
                 Features
               </a>
               <a
                 href="#how-it-works"
-                className="block py-2 font-medium text-gray-600 transition-colors hover:text-blue-600"
+                className="block py-2 cursor-pointer font-medium text-gray-600 transition-colors hover:text-blue-600"
               >
                 How It Works
               </a>
               <a
                 href="#security"
-                className="block py-2 font-medium text-gray-600 transition-colors hover:text-blue-600"
+                className="block py-2 cursor-pointer font-medium text-gray-600 transition-colors hover:text-blue-600"
               >
                 Security
               </a>
               <a
                 href="#pricing"
-                className="block py-2 font-medium text-gray-600 transition-colors hover:text-blue-600"
+                className="block py-2 cursor-pointer font-medium text-gray-600 transition-colors hover:text-blue-600"
               >
                 Pricing
               </a>
               <button
                 onClick={onStartCall}
-                className="mt-2 w-full rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-3 font-semibold text-white"
+                className="mt-2 w-full cursor-pointer rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-3 font-semibold text-white"
               >
                 Try for Free
               </button>
@@ -136,10 +136,7 @@ export default function WelcomeView({ onStartCall, startButtonText }: WelcomeVie
         <div className="relative z-10 mx-auto max-w-7xl">
           <div className="text-center">
             {/* Badge */}
-            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/20 px-4 py-2 text-white backdrop-blur-md">
-              <Sparkles className="h-4 w-4" />
-              <span className="text-sm font-medium">Powered by Advanced AI Technology</span>
-            </div>
+          
 
             {/* Main Headline */}
             <h1 className="mb-6 text-5xl leading-tight font-bold text-white md:text-6xl lg:text-7xl">
@@ -406,7 +403,7 @@ export default function WelcomeView({ onStartCall, startButtonText }: WelcomeVie
           </p>
           <button
             onClick={onStartCall}
-            className="group hover:shadow-3xl inline-flex items-center gap-3 rounded-full bg-white px-10 py-5 text-xl font-bold text-blue-600 shadow-2xl transition-all duration-300 hover:scale-105"
+            className="group cursor-pointer hover:shadow-3xl inline-flex items-center gap-3 rounded-full bg-white px-10 py-5 text-xl font-bold text-blue-600 shadow-2xl transition-all duration-300 hover:scale-105"
           >
             <Mic className="h-7 w-7" />
             Start Your Free Consultation
