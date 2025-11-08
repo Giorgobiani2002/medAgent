@@ -59,7 +59,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
     >
       <head>
         {styles && <style>{styles}</style>}
-        <title>{pageTitle}</title>
+        <title>MedVoice.Ge</title>
         <meta name="description" content={pageDescription} />
         <ApplyThemeScript />
       </head>
